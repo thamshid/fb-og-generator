@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+	
+	<meta itemprop="name" content="{{obj.title}}">
+	<meta itemprop="description" content="{{obj.discription}}">
+	<meta itemprop="image" content="{{obj.image.url}}">
 	<meta property="og:title" content="{{obj.title}}" />
-	<meta property="og:type" content="video.movie" />
-	<meta property="og:url" content="{{obj.url}}" />
+	<meta property="og:description" content="{{obj.discription}}" /> 
+	<meta property="og:url" content="{{obj.short}}" />
 	<meta property="og:image" content="{{obj.image.url}}" />
 	<script>
 		window.location ="{{obj.url}}";
